@@ -1,6 +1,6 @@
 # Directory contents
 
-[rdata](rdata) Key data sets from Geographical information system of the Commission (GISCO) in RData format
+[rdata](rdata) Key data sets from Geographical information system of the Commission (GISCO) as RData files. 
 
 [rscripts](rscripts) Automated scripts that were used to convert Geographical information system of the Commission (GISCO) GIS data into RData format.
 
@@ -8,9 +8,15 @@ This repository is associated with Eurostat-packege within the rOpenGov project.
 
 # Available data sets in R
 
-Currently these map collections are available as RData files:
+[CISGO provides geospatial data in five different resolutions and in many different formats](http://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts). For these collections we use `Shapefile` type and withing the zipfile we use `NUTS_RG_XXM_2013.shp` version of the shapefile in all five resolution.
 
-We are looking forward to add more when time allows. Your contributions are welcome. See the TODO file.
+As for **object classes** in R, we provide the data in three different classes
+
+1. `sf`: *simple features* as in package [`sf`](https://cran.r-project.org/web/packages/sf/index.html)
+2. `spdf`: *SpatialPolygonDataFrame* as in package [`sp`](https://cran.r-project.org/web/packages/sp/index.html)
+3. `df`: *"fortified" data.frame* for plotting with  [`ggplot2`](https://cran.r-project.org/web/packages/ggplot2/index.html)-package
+
+Eventually as `sf` matures we are planning to migrate solely to `sf´.
 
 # License
 
