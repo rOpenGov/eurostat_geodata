@@ -6,7 +6,7 @@
 
 This repository is associated with Eurostat-packege within the rOpenGov project.
 
-# Available datasets in R
+# Available data sets in R
 
 [CISGO provides geospatial data in five different resolutions and in many different formats](http://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts). For these collections we use `Shapefile` type and withing the zipfile we use `NUTS_RG_XXM_2013.shp` version of the shapefile in all five resolution.
 
